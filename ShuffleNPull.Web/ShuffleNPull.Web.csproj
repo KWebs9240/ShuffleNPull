@@ -176,6 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SayHiController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="EchoBot.cs" />
     <Compile Include="Global.asax.cs">
@@ -215,6 +216,11 @@
     <Content Include="Views\Home\First.cshtml" />
     <Content Include="Views\Home\Second.cshtml" />
     <Content Include="Views\Home\Configure.cshtml" />
+    <None Include="Properties\PublishProfiles\ShuffleNPullApp - Web Deploy.pubxml" />
+    <Content Include="Web.Private.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

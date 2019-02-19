@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Microsoft.Teams.Samples.HelloWorld.Web
+namespace ShuffleNPull.Web
 {
     public static class WebApiConfig
     {

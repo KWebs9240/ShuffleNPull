@@ -8,7 +8,7 @@ using Microsoft.Bot.Connector;
 using Microsoft.Bot.Connector.Teams;
 using Microsoft.Bot.Connector.Teams.Models;
 
-namespace Microsoft.Teams.Samples.HelloWorld.Web.Controllers
+namespace ShuffleNPull.Web.Controllers
 {
     [BotAuthentication]
     public class MessagesController : ApiController
