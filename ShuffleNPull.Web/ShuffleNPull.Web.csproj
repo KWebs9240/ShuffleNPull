@@ -216,11 +216,17 @@
     <Content Include="Views\Home\First.cshtml" />
     <Content Include="Views\Home\Second.cshtml" />
     <Content Include="Views\Home\Configure.cshtml" />
-    <None Include="Properties\PublishProfiles\ShuffleNPullApp - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ShuffleNPullApp - Web Deploy.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Web.Private.config">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Web.Private.Connections.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

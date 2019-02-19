@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="997cfa6c-e84f-48a5-b119-c52ec022a2d3" ChangeDateTime="02/19/2019 22:31:58">
+    <Property Name="ElementName" Value="[dbo].[DB_PULLS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DB_PULLS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PULL_ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b3d1782e-305a-489b-9634-4f3c82dbbe6d" ChangeDateTime="02/19/2019 22:36:45">
+    <Property Name="ElementName" Value="[dbo].[DB_PULLS].[CHANNEL_NAME]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DB_PULLS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TEAM_NAME" />
+  </Operation>
+</Operations>
