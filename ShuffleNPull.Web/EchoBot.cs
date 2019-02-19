@@ -15,7 +15,7 @@ namespace ShuffleNPull.Web
             if (activity.Type.Equals("message"))
             {
                 var members = await connector.Conversations.GetConversationMembersAsync(activity.Conversation.Id);
-                var channelThing = activity.GetChannelData<TeamsChannelData>();
+                //var channelThing = activity.GetChannelData<TeamsChannelData>();
                 //var reply = activity.CreateReply($"The members are {string.Join("\n\n", members.Select(x => x.Name))}");
 
                 var reply = activity.CreateReply($"Shuffles Deck... Pulls Card\n\n");
