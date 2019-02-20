@@ -25,7 +25,7 @@ namespace ShuffleNPull.Web
                 if (messagyBoi.Equals("Yo save channel data"))
                 {
                     //Check to see whether we've already got it
-                    DbChannel existingChannel = ShuffleSQLHelper.SqlGetSingleChannel(channelThing.Channel.Id);
+                    DbChannel existingChannel = ShuffleSQLHelper.SqlGetSingleChannel(channelThing.Channel.Id, channelThing.Team.Id);
                     if (existingChannel != null)
                     {
                         reply = activity.CreateReply($"Nah fam, you already got data for Channel: {existingChannel.ChannelName}");
@@ -38,6 +38,7 @@ namespace ShuffleNPull.Web
                             var addChannel = new DbChannel()
                             {
                                 ChannelId = channelThing.Channel.Id,
+                                TeamId = channelThing.Team.Id,
                                 ChannelName = "General"
                             };
 
@@ -53,6 +54,7 @@ namespace ShuffleNPull.Web
                             var addChannel = new DbChannel()
                             {
                                 ChannelId = currentChannel.Id,
+                                TeamId = channelThing.Team.Id,
                                 ChannelName = currentChannel.Name
                             };
 

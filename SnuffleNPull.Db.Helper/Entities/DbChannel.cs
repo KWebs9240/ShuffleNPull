@@ -9,6 +9,7 @@ namespace ShuffleNPull.Db.Helper.Entities
     public class DbChannel
     {
         public string ChannelId { get; set; }
+        public string TeamId { get; set; }
         public string ChannelName { get; set; }
     }
 }
