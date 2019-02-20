@@ -19,8 +19,8 @@ namespace SnuffleNPull.Db.Helper.SqlHelper
                 (
                     CALLER_NAME,
                     PULLED_NAME,
-                    TEAM_NAME,
-                    CHANNEL_NAME,
+                    TEAM_ID,
+                    CHANNEL_ID,
                     PULL_MESSAGE,
                     PULL_DT
                 )

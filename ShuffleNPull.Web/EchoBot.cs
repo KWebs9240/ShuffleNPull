@@ -93,7 +93,7 @@ namespace ShuffleNPull.Web
                     Random rnd = new Random();
                     int poorSoul = rnd.Next(members.Count);
 
-                    //reply.AddMentionToText(members[poorSoul], MentionTextLocation.AppendText);
+                    reply.AddMentionToText(members[poorSoul], MentionTextLocation.AppendText);
 
                     var newPull = new DbPull()
                     {

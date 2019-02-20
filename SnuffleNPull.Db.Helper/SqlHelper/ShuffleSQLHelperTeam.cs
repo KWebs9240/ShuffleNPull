@@ -29,8 +29,8 @@ namespace SnuffleNPull.Db.Helper.SqlHelper
                     {
                         rtnItem = new DbTeam();
 
-                        rtnItem.TeamId = reader["CHANNEL_ID"].ToString();
-                        rtnItem.TeamName = reader["CHANNEL_NAME"].ToString();
+                        rtnItem.TeamId = reader["TEAM_ID"].ToString();
+                        rtnItem.TeamName = reader["TEAM_NAME"].ToString();
                     }
                 }
             }
