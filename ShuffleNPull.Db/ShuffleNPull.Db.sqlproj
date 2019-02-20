@@ -61,8 +61,10 @@
     <Folder Include="Sequence" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Table\DB_PULLS.sql" />
     <Build Include="Sequence\SEQ_PULL_ID.sql" />
+    <Build Include="Table\DB_PULL.sql" />
+    <Build Include="Table\DB_CHANNEL.sql" />
+    <Build Include="Table\DB_TEAM.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ShuffleNPull.Db.refactorlog" />

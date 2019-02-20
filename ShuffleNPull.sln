@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ShuffleNPull.Db", "ShuffleNPull.Db\ShuffleNPull.Db.sqlproj", "{B242B32E-F626-412C-92D8-3DAB44E312F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShuffleNPull.Db.Helper", "SnuffleNPull.Db.Helper\ShuffleNPull.Db.Helper.csproj", "{CE4B3710-B946-4BBE-8F10-04338A7705AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{B242B32E-F626-412C-92D8-3DAB44E312F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B242B32E-F626-412C-92D8-3DAB44E312F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B242B32E-F626-412C-92D8-3DAB44E312F3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CE4B3710-B946-4BBE-8F10-04338A7705AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4B3710-B946-4BBE-8F10-04338A7705AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4B3710-B946-4BBE-8F10-04338A7705AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4B3710-B946-4BBE-8F10-04338A7705AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
