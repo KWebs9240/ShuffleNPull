@@ -11,7 +11,7 @@ namespace SnuffleNPull.Db.Helper.SqlHelper
 {
     public static partial class ShuffleSQLHelper
     {
-        public static DbPull SqlSavePull(DbPull saveItem)
+        public static DbPull SqlInsertPull(DbPull saveItem)
         {
             using (SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["dbConnection"].ConnectionString))
             {
@@ -28,16 +28,16 @@ namespace SnuffleNPull.Db.Helper.SqlHelper
                 (
                     @CallerName,
                     @PulledName,
-                    @TeamName,
-                    @ChannelName,
+                    @TeamId,
+                    @ChannelId,
                     @PullMessage,
                     @PullDate
                 )", sqlConnection);
 
                 cmd.Parameters.AddWithValue("@CallerName", saveItem.CallerName);
                 cmd.Parameters.AddWithValue("@PulledName", saveItem.PulledName);
-                cmd.Parameters.AddWithValue("@TeamName", saveItem.TeamName);
-                cmd.Parameters.AddWithValue("@ChannelName", saveItem.ChannelName);
+                cmd.Parameters.AddWithValue("@TeamId", saveItem.TeamId);
+                cmd.Parameters.AddWithValue("@ChannelId", saveItem.ChannelId);
                 cmd.Parameters.AddWithValue("@PullMessage", saveItem.PullMessage);
                 cmd.Parameters.AddWithValue("@PullDate", saveItem.PullDate);
 

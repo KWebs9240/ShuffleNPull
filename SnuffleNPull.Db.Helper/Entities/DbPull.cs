@@ -11,8 +11,8 @@ namespace ShuffleNPull.Db.Helper.Entities
         public long PullId { get; set; }
         public string CallerName { get; set; }
         public string PulledName { get; set; }
-        public string TeamName { get; set; }
-        public string ChannelName { get; set; }
+        public string TeamId { get; set; }
+        public string ChannelId { get; set; }
         public string PullMessage { get; set; }
         public DateTime PullDate { get; set; }
     }

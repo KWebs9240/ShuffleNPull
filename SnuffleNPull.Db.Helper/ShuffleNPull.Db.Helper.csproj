@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\DbTeam.cs" />
+    <Compile Include="Entities\DbChannel.cs" />
     <Compile Include="Entities\DbPull.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlHelper\ShuffleSQLHelperTeam.cs" />
+    <Compile Include="SqlHelper\ShuffleSQLHelperChannel.cs" />
     <Compile Include="SqlHelper\ShuffleSQLHelperPull.cs" />
   </ItemGroup>
   <ItemGroup />
