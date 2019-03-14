@@ -84,6 +84,12 @@ namespace ShuffleNPull.Web
                         reply = activity.CreateReply($"Added data for Team: {addTeam.TeamName}");
                     }
                 }
+                else if (messagyBoi.Equals("List"))
+                {
+                    var members = await connector.Conversations.GetConversationMembersAsync(activity.Conversation.Id);
+                    reply = activity.CreateReply($"List of potential people:\n\n");
+                    reply.Text += string.Join("\n\n", members.Select(x => x.Name));
+                }
                 else
                 {
                     var members = await connector.Conversations.GetConversationMembersAsync(activity.Conversation.Id);
